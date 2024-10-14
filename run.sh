@@ -36,7 +36,7 @@ if [ ! -d "Notpixel-bot" ]; then
 
     # Clone the Notpixel-bot repository
     echo -e "${BLUE}Cloning Notpixel-bot repository...${NC}"
-    git clone https://github.com/vanhbakaa/Notpixel-bot.git
+    git clone https://github.com/rjfahad/MyNotpixel-bot.git
 
     # Change directory to Notpixel-bot
     echo -e "${BLUE}Navigating to Notpixel-bot directory...${NC}"
