@@ -48,7 +48,9 @@ if [ ! -d "MyNotpixel-bot" ]; then
 
     # Open .env file for editing
     echo -e "${YELLOW}Opening .env file for editing...${NC}"
-    nano .env
+    # Open .env file for editing
+    echo -e "${YELLOW}Please edit the .env file to configure your settings.${NC}"
+
 
     # Set up Python virtual environment
     echo -e "${BLUE}Setting up Python virtual environment...${NC}"
