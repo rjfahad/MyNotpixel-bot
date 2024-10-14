@@ -25,8 +25,8 @@ install_packages() {
     pkg install python3.10 -y
 }
 
-# Check if Notpixel-bot directory exists
-if [ ! -d "Notpixel-bot" ]; then
+# Check if MyNotpixel-bot directory exists
+if [ ! -d "MyNotpixel-bot" ]; then
     # If the directory does not exist, install everything
     install_packages
 
@@ -34,13 +34,13 @@ if [ ! -d "Notpixel-bot" ]; then
     echo -e "${BLUE}Upgrading pip and installing wheel...${NC}"
     pip3.10 install --upgrade pip wheel --quiet
 
-    # Clone the Notpixel-bot repository
-    echo -e "${BLUE}Cloning Notpixel-bot repository...${NC}"
+    # Clone the MyNotpixel-bot repository
+    echo -e "${BLUE}Cloning MyNotpixel-bot repository...${NC}"
     git clone https://github.com/rjfahad/MyNotpixel-bot.git
 
-    # Change directory to Notpixel-bot
-    echo -e "${BLUE}Navigating to Notpixel-bot directory...${NC}"
-    cd Notpixel-bot || exit
+    # Change directory to MyNotpixel-bot
+    echo -e "${BLUE}Navigating to MyNotpixel-bot directory...${NC}"
+    cd MyNotpixel-bot || exit
 
     # Copy .env-example to .env
     echo -e "${BLUE}Copying .env-example to .env...${NC}"
@@ -66,7 +66,7 @@ if [ ! -d "Notpixel-bot" ]; then
 
 else
     # If the directory exists, just navigate to it
-    echo -e "${GREEN}Notpixel-bot is already installed. Navigating to the directory...${NC}"
+    echo -e "${GREEN}MyNotpixel-bot is already installed. Navigating to the directory...${NC}"
     cd MyNotpixel-bot || exit
 
     # Activate the virtual environment
