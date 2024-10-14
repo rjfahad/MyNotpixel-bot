@@ -47,8 +47,6 @@ if [ ! -d "MyNotpixel-bot" ]; then
     cp .env-example .env
 
     # Open .env file for editing
-    echo -e "${YELLOW}Opening .env file for editing...${NC}"
-    # Open .env file for editing
     echo -e "${YELLOW}Please edit the .env file to configure your settings.${NC}"
 
 
